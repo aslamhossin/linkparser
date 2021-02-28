@@ -1,0 +1,3 @@
+include ':linkparser'
+include ':sample'
+rootProject.name = "LinkParser"
