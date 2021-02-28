@@ -22,6 +22,12 @@ Add it in your root build.gradle at the end of repositories:
 	}
 
 ## Step 3. Use it in your project
+#### Add permission into your manifest 
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+#### Sample code snippet
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
