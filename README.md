@@ -18,7 +18,7 @@ Add it in your root build.gradle at the end of repositories:
 ## Step 2. Add the dependency
 
 	dependencies {
-	        implementation 'com.github.mdaslamHossin:linkparser:1'
+	        implementation 'com.github.mdaslamHossin:linkparser:latest-release'
 	}
 
 ## Step 3. Use it in your project
