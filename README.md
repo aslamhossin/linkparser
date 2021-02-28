@@ -22,7 +22,7 @@ Add it in your root build.gradle at the end of repositories:
 	}
 
 ## Step 3. Use it in your project
-
+```kotlin
 class MainActivity : AppCompatActivity() {
 
   private lateinit var openGraphManager: OpenGraphManager
@@ -53,6 +53,8 @@ class MainActivity : AppCompatActivity() {
     openGraphManager.dispose()
   }
 }
+```
+
 ## Contributing
 
 1. Fork it
