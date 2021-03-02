@@ -7,21 +7,29 @@ To get a Git project into your build:
 ## Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
-
-	allprojects {
-		repositories {
-		
-		maven { url 'https://jitpack.io' }
-		maven { url "https://oss.jfrog.org/libs-snapshot" }
-		}
-	}
+```gradle
+repositories {
+  ...
+  maven { url "https://jitpack.io" }
+  ...
+}
+```
 ## Step 2. Add the dependency
 
-	dependencies {
-	        implementation 'com.github.mdaslamHossin:linkparser:1'
-	}
-
+```gradle
+dependencies {
+  ...
+   implementation 'com.github.mdaslamHossin:linkparser:latest-release'
+  ...
+}
+```
 ## Step 3. Use it in your project
+#### Add permission into your manifest 
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+#### Sample code snippet
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
@@ -55,7 +63,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## Contributing
+# Contributing
 
 1. Fork it
 2. Create your feature branch (git checkout -b my-new-feature)
