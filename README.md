@@ -7,20 +7,22 @@ To get a Git project into your build:
 ## Step 1. Add the JitPack repository to your build file
 
 Add it in your root build.gradle at the end of repositories:
-
-	allprojects {
-		repositories {
-		
-		maven { url 'https://jitpack.io' }
-		maven { url "https://oss.jfrog.org/libs-snapshot" }
-		}
-	}
+```gradle
+repositories {
+  ...
+  maven { url "https://jitpack.io" }
+  ...
+}
+```
 ## Step 2. Add the dependency
 
-	dependencies {
-	        implementation 'com.github.mdaslamHossin:linkparser:latest-release'
-	}
-
+```gradle
+dependencies {
+  ...
+   implementation 'com.github.mdaslamHossin:linkparser:latest-release'
+  ...
+}
+```
 ## Step 3. Use it in your project
 #### Add permission into your manifest 
 
